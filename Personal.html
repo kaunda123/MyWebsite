@@ -1,254 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head >
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>KauPersonal</title>
         <link rel="stylesheet" href="style.css">
-        
     </head>
-    <body style="padding: 100px;background-image: linear-gradient(to bottom,rgb(189, 233, 189),#000);">
-        <header style="font-size:100px;font: weight 20px;background-color: rgb(255, 255, 255);padding: -100px;">Personal website</header>
-        <!--img src="Presentation1.jpg" style="position: absolute;top: 0;left: 0;width:2000px;height: 2000px;z-index: -1;"-->
-        <section style="position: relative; background-color: white;padding: -100px;">
+    <body style="padding: 100px; background-image: linear-gradient(to bottom, rgb(189, 233, 189), #000);">
+        <header style="font-size: 5vw; font-weight: 20px; background-color: rgb(255, 255, 255); padding: 0;">
+            Personal website
+        </header>
+        <section style="position: relative; background-color: white; padding: 0;">
             <nav>
-                <button style="position: relative;z-index: 1;">Home</button>
+                <button style="position: relative; z-index: 1;">Home</button>
                 <button><a href="AboutUs.html">About Us</a></button>
                 <button>Games</button>
             </nav>
         </section>
-        <section style="top: 100px;position: relative; background-color: white;padding: 50px;width: 700px;">
-            <li><a href="mywebsite.jpg">First Link</a></li>
-            <li><a>Second Link</a></li>
-            <li><a>Third Link</a></li>
-            <li><a>Fourth Link</a></li>
-            <li><a>Fifth Link</a></li>
-            <p style="width: 600px;">
-                The man is the one the only man that can destroy all humanity.
-                All my years of conquest,slaugter,it wasnt personal but i tell you now what i am about to do to your annoying little planet I am going to enjoy it very very much.You should have some level of Python coding experience to make the most of this book.
-                Although the book assumes no previous Flask knowledge, Python concepts such as
-                packages, modules, functions, decorators, and object-oriented programming are as
-               sumed to be well understood. Some familiarity with exceptions and diagnosing issues
-                from stack traces will be very useful.
-                While working through the examples in this book, you will spend a great deal of time
-                in the command line. You should feel comfortable using the command line of your
-                operating system.
-                Modern web applications cannot avoid the use of HTML, CSS, and JavaScript. The
-                example application that is developed throughout the book obviously makes use of
-                these, but the book itself does not go into a lot of detail regarding these technologies
-                and how they are used. Some degree of familiarity with these languages is recommended
-                if you intend to develop complete applications without the help of a developer versed
-                in client-side techniques.
-                I released the companion application to this book as open source on GitHub. Although
-                GitHub makes it possible to download applications as regular ZIP or TAR files, I strongly
-                recommend that you install a Git client and familiarize yourself with source code version
-                control, at least with the basic commands to clone and check out the different versions
-                of the application directly from the repository. The short list of commands that you’ll
-                need is shown in “How to Work with the Example Code ” on page xiii. You will want to
-                use version control for your own projects as well, so use this book as an excuse to learn
-                Git!
-                Finally, this book is not a complete and exhaustive reference on the Flask framework.
-                Most features are covered, but you should complement this book with the official Flask
-                documentation.
-                How This Book Is Organized
-                This book is divided into three parts:
-                Part I, Introduction to Flask, explores the basics of web application development with
-                the Flask framework and some of its extensions:
-                • Chapter 1 describes the installation and setup of the Flask framework.
-                • Chapter 2 dives straight into Flask with a basic application.
-                • Chapter 3 introduces the use of templates in Flask applications.
-                • Chapter 4 introduces web forms.
-                • Chapter 5 introduces databases.
-                xii 
-               | 
-               Preface
-               • Chapter 6 introduces email support.
-                • Chapter 7 presents an application structure that is appropriate for medium and
-                large applications.
-                Part II, Example: A Social Blogging Application, builds Flasky, the open source blogging
-                and social networking application that I developed for this book:
-                • Chapter 8 implements a user authentication system.
-                • Chapter 9 implements user roles and permissions.
-                • Chapter 10 implements user profile pages.
-                • Chapter 11 creates the blogging interface.
-                • Chapter 12 implements followers.
-                • Chapter 13 implements user comments for blog posts.
-                • Chapter 14 implements an Application Programming Interface (API).
-                Part III, The Last Mile, describes some important tasks not directly related to application
-                coding that need to be considered before publishing an application:
-                • Chapter 15 describes different unit testing strategies in detail.
-                • Chapter 16 gives an overview of performance analysis techniques.
-                • Chapter 17 describes deployment options for Flask applications, both traditional
-                and cloud based.
-                • Chapter 18 lists additional resources.
-                How to Work with the Example Code 
-               The code examples presented in this book are available from GitHub at https://
-                github.com/miguelgrinberg/flasky.
-                The commit history in this repository was carefully created to match the order in which
-                concepts are presented in the book. The recommended way to work with the code is to
-                check out the commits starting from the oldest, then move forward through the commit
-                list as you make progress with the book. As an alternative, GitHub will also let you
-                download each commit as a ZIP or TAR file.
-                If you decide to use Git to work with the source code, then you need to install the Git
-                client, which you can download from http://git-scm.com. The following command
-                downloads the example code using Git:
-                $ git clone https://github.com/miguelgrinberg/flasky.git
-                Preface 
-               | 
-               xiii
-               The git clone command installs the source code from GitHub into a flasky folder that
-                is created in the current directory. This folder does not contain just source code; a copy
-                of the Git repository with the entire history of changes made to the application is also
-                included.
-                In the first chapter you will be asked to check out the initial release of the application,
-                and then, at the proper places you will be instructed to move forward in the history.
-                The Git command that lets you move through the change history is git checkout. Here
-                is an example:
-                $ git checkout 1a
-                The 1a referenced in the command is a tag, a named point in the history of the project.
-                This repository is tagged according to the chapters of the book, so the 1a tag used in
-                the example sets the application files to the initial version used in Chapter 1. Most
-                chapters have more than one tag associated with them, so, for example, tags 5a, 5b, and
-                so on are incremental versions presented in Chapter 5.
-                In addition to checking out the source files for a version of the application, you may
-                need to perform some setup. For example, in some cases you will need to install addi
-               tional Python packages or apply updates to the database. You will be told when these
-                are necessary.
-                You will normally not modify the source files of the application, but if you do, then Git
-                will not let you check out a different revision, as that would cause your local changes to
-                be lost. Before you can check out a different revision, you will need to revert the files to
-                their original state. The easiest way to do this is with the git reset command:
-                $ git reset --hard
-                This command will destroy your local changes, so you should save anything you don’t
-                want to lose before you use this command.
-                From time to time, you may want to refresh your local repository from the one on
-                GitHub, where bug fixes and improvements may have been applied. The commands
-                that achieve this are:
-                $ git fetch --all
-                $ git fetch --tags
-                $ git reset --hard origin/master
-                The git fetch commands are used to update the commit history and the tags in your
-                local repository from the remote one on GitHub, but none of this affects the actual
-                source files, which are updated with the git reset command that follows. Once again,
-                be aware that any time git reset is used you will lose any local changes you have made.
-                Another useful operation is to view all the differences between two versions of the
-                application. This can be very useful to understand a change in detail. From the command
-                xiv 
-               | 
-               Preface
-               line, the git diff command can do this. For example, to see the difference between
-                revisions 2a and 2b, use:
-                $ git diff  2a 2b
-                The differences are shown as a patch, which is not a very intuitive format to review
-                changes if you are not used to working with patch files. You may find that the graphical
-                comparisons shown by GitHub are much easier to read. For example, the differences
-                between revisions 2a and 2b can be viewed on GitHub at https://github.com/miguelgrin
-                berg/flasky/compare/2a...2b
-                Using Code Examples
-                This book is here to help you get your job done. In general, if example code is offered
-                with this book, you may use it in your programs and documentation. You do not need
-                to contact us for permission unless you’re reproducing a significant portion of the code.
-                For example, writing a program that uses several chunks of code from this book does
-                not require permission. Selling or distributing a CD-ROM of examples from O’Reilly
-                books does require permission. Answering a question by citing this book and quoting
-                example code does not require permission. Incorporating a significant amount of ex
-               ample code from this book into your product’s documentation does require permission.
-                We appreciate, but do not require, attribution. An attribution usually includes the title,
-                author, publisher, and ISBN. For example: “Flask Web Development by Miguel Grinberg
-                (O’Reilly). Copyright 2014 Miguel Grinberg, 978-1-449-3726-2.”
-                If you feel your use of code examples falls outside fair use or the permission given above,
-                feel free to contact us at permissions@oreilly.com.
-                Conventions Used in This Book
-                The following typographical conventions are used in this book:
-                Italic
-                Indicates new terms, URLs, email addresses, filenames, and file extensions.
-                Constant width
-                Used for program listings, as well as within paragraphs to refer to program elements
-                such as variable or function names, databases, data types, environment variables,
-                statements, and keywords.
-                Constant width bold
-                Shows commands or other text that should be typed literally by the user.
-                Preface 
-               | 
-               xv
-               Constant width italic
-                Shows text that should be replaced with user-supplied values or by values deter
-               mined by context.
-                This element signifies a tip or suggestion.
-                This element signifies a general note.
-                This element indicates a warning or caution.
-                Safari® Books Online
-                Safari Books Online is an on-demand digital library that
-                delivers expert content in both book and video form from
-                the world’s leading authors in technology and business.
-                Technology professionals, software developers, web designers, and business and crea
-               tive professionals use Safari Books Online as their primary resource for research, prob
-               lem solving, learning, and certification training.
-                Safari Books Online offers a range of product mixes and pricing programs for organi
-               zations, government agencies, and individuals. Subscribers have access to thousands of
-                books, training videos, and prepublication manuscripts in one fully searchable database
-                from publishers like O’Reilly Media, Prentice Hall Professional, Addison-Wesley Pro
-               fessional, Microsoft Press, Sams, Que, Peachpit Press, Focal Press, Cisco Press, John
-                Wiley & Sons, Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe Press, FT
-                Press, Apress, Manning, New Riders, McGraw-Hill, Jones & Bartlett, Course Technol
-               ogy, and dozens more. For more information about Safari Books Online, please visit us
-                online.
-                xvi 
-               | 
-               Preface
-               How to Contact Us
-                Please address comments and questions concerning this book to the publisher:
-                O’Reilly Media, Inc.
-                1005 Gravenstein Highway North
-                Sebastopol, CA 95472
-                800-998-9938 (in the United States or Canada)
-                707-829-0515 (international or local)
-                707-829-0104 (fax)
-                We have a web page for this book, where we list errata, examples, and any additional
-                information. You can access this page at http://www.bit.ly/flask-web-dev.
-                To comment or ask technical questions about this book, send email to bookques
-                tions@oreilly.com.
-                For more information about our books, courses, conferences, and news, see our website
-                at http://www.oreilly.com.
-                Find us on Facebook: http://facebook.com/oreilly
-                Follow us on Twitter: http://twitter.com/oreillymedia
-                Watch us on YouTube: http://www.youtube.com/oreillymedia
-                Acknowledgments
-                I could not have written this book alone. I have received a lot of help from family, co
-               workers, old friends, and new friends I’ve made along the way.
-                I’d like to thank Brendan Kohler for his detailed technical review and for his help in
-                giving shape to the chapter on Application Programming Interfaces. I’m also in debt to
-                David Baumgold, Todd Brunhoff, Cecil Rock, and Matthew Hugues, who reviewed the
-                manuscript at different stages of completion and gave me very useful advice regarding
-                what to cover and how to organize the material.
-                Writing the code examples for this book was a considerable effort. I appreciate the help
-                of Daniel Hofmann, who did a thorough code review of the application and pointed out
-                several improvements. I’m also thankful to my teenage son, Dylan Grinberg, who sus
-               pended his Minecraft addiction for a few weekends and helped me test the code under
-                several platforms.
-                O’Reilly has a wonderful program called Early Release that allows impatient readers to
-                have access to books while they are being written. Some of my Early Release readers
-                went the extra mile and engaged in useful conversations regarding their experience
-                working through the book, leading to significant improvements. I’d like to acknowledge
-                Preface 
-               | 
-               xvii
-               Sundeep Gupta, Dan Caron, Brian Wisti and Cody Scott in particular for the contri
-               butions they’ve made to this book.
-                The staff at O’Reilly Media has always been there for me. Above all I’d like to recognize
-                my wonderful editor, Meghan Blanchette, for her support, advice, and assistance from
-                the very first day we met. Meg has made the experience of writing my first boo
+        <section style="position: relative; background-color: white; padding: 50px; width: 90%; max-width: 700px; margin: 0 auto;">
+            <ul>
+                <li><a href="mywebsite.jpg">First Link</a></li>
+                <li><a>Second Link</a></li>
+                <li><a>Third Link</a></li>
+                <li><a>Fourth Link</a></li>
+                <li><a>Fifth Link</a></li>
+            </ul>
+            <p>
+                <!-- Content goes here -->
             </p>
-
-            <div style="position: relative;top: -2760px;background-color: white;left: 1000px;width: 600px;height: 600px;">
-
-            </div>
         </section>
-        <footer>
-            <p style="position: relative;background-color: white;top: 100px;height: 200px;">&copy;
-                Sites
-            </p> 
-        </footer>
     </body>
 </html>
