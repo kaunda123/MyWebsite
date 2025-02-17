@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head >
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>KauPersonal</title>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body style="padding: 100px;background-image: linear-gradient(to bottom,rgb(189, 233, 189),#000);">
-        <header style="font-size:100px;font: weight 20px;background-color: rgb(255, 255, 255);padding: -100px;">About Us</header>
-        <section style="position: relative; background-color: white;padding: -100px;">
-            <nav>
-                <button style="position: relative;z-index: 1;">Home</button>
-                <button>About Us</button>
-                <button>Games</button>
-            </nav>
-        </section>
-        <section style="top: 100px;position: relative; background-color: white;padding: 50px;width: 700px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KauPersonal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    padding: 50px;
+}
+
+.about-us-content {
+    width: 40vw;
+}
+
+.about-us-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Personal.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="#">Games</a></li>
+        </ul>
+    </nav>
+    <section class="about-us">
+        <div class="about-us-content">
             <p>
-                We are a business that creates websites for businesses or organizations or personal use. Websites from personal blogs,online forms,login authentication,etc. We do designing and web hosting setup BUT we dont do web hosting. We will recommend best web hosting platforms to join,in some cases they are free but some have fees which are mostly charged monthly. 
-                I have knowledge in HTML,CSS,Javascript,Sql,which are essential in developing most Websites.I completed Microsoft Certified Profrssionals Certificate at Boston and I have done many web development projects.
+                We are a business that creates websites for businesses or organizations or personal use. Websites from personal blogs, online forms, login authentication, etc. We do designing and web hosting setup BUT we don't do web hosting. We will recommend best web hosting platforms to join, in some cases they are free but some have fees which are mostly charged monthly. I have knowledge in HTML, CSS, Javascript, Sql, which are essential in developing most Websites. I completed Microsoft Certified Professionals Certificate at Boston and I have done many web development projects.
             </p>
-        </section>
-    </body>
+        </div>
+        <div class="about-us-images">
+            <img src="Kau.jpg" alt="Kau" style="width: 25vw;">
+            <img src="Nature pic1.jpg" alt="Nature Pic 1" style="width: 25vw;">
+        </div>
+    </section>
+</body>
 </html>
